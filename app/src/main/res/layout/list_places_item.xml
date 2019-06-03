@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:orientation="vertical">
+
+    <LinearLayout android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:orientation="vertical"
+                  android:layout_margin="16dp">
+<!--        android:background="?android:attr/selectableItemBackground"
+        android:clickable="true"
+        android:focusable="true"-->
+
+        <TextView
+                android:id="@+id/text_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:textColor="@color/textPrimary"
+        />
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/textSecondary"
+                android:id="@+id/text_addr"
+        />
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/textSecondary"
+                android:id="@+id/text_cep"
+        />
+        <TextView
+                android:layout_marginTop="2dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/text_phone"
+                android:textColor="@color/colorAccent"
+        />
+    </LinearLayout>
+
+    <View android:layout_width="match_parent"
+          android:background="@color/colorDivider"
+          android:layout_height="1dp"
+          android:layout_gravity="bottom"/>
+
+</FrameLayout>
